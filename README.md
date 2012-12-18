@@ -5,12 +5,12 @@ Utility module for returning lines of text from streams and files as an array of
 
 The newline character \n is used to identify line breaks.
 
-The use case for this module is for "live"rendering of log files. The typical approach would be as follows:
+The use case for this module is for "live" rendering of log files. The typical approach would be as follows:
 
-        Get last X number of lines in the log file
+        Get last X number of lines in the log file (lastLinesInFile)
 
         while true
-          get any changes in log file
+          get any changes in log file (fromOffsetInFile)
         done
 
 The first call will use lastLinesInFile or lastLinesInStream which returns an array of lines and an offset value indicating what position in the file/stream was read up to (i.e. how many lines in total were in the file/stream). This value can be sent in subsequent requests to fromOffsetInFile/fromOffsetInStream.
