@@ -1,15 +1,16 @@
 {
   "name": "fh-streamer",
-  "description" : "A utility for parsing text streams and returning chunks and offsets as an array of lines",
+  "description": "A utility for parsing text streams and returning chunks and offsets as an array of lines",
   "version": "0.2.0",
   "homepage": "https://github.com/feedhenry/fh-streamer",
-  "author" : "John Frizelle <john.frizelle@feedhenry.com>",
-  "dependencies" : {},
-  "main" : "./lib/streamer.js",
+  "author": "John Frizelle <john.frizelle@feedhenry.com>",
+  "dependencies": {},
+  "main": "./lib/streamer.js",
   "scripts": {
-    "test" : "node ./test/streamTest.js"
+    "test": "node ./test/streamTest.js"
   },
-  "engines" : {
-    "node" : ">=0.6"
-  }
+  "engines": {
+    "node": ">=0.6"
+  },
+  "license": "MIT"
 }
